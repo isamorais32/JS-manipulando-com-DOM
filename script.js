@@ -1,10 +1,11 @@
+
 // ==================================================
 // // ==> SELECIONAR ELEMENTOS <==
 // 1. Selecione o elemento <body> e armazene em uma variável
-let body = document.getElementbyTagName ("body")
+let body = document.body
 
 // 2. Selecione todos os elementos <p> e armazene em uma variável
-let paragrafos =document.getElementbyTagName("p")
+let paragrafos =document.getElementsByTagName("p")
 
 // 3. Selecione o elemento com id "meuId" (crie este elemento no HTML se necessário)
 let elementoPorId = document.getElementById("meuid")
@@ -15,10 +16,11 @@ let elementoPorId = document.getElementById("meuid")
 let novoH1 = document.createElement("h1")
 
 // 5. Defina o texto do h1 como "Minha Atividade DOM"
-novoH1.textContent = "Minha Atividade DOM"
+novoH1.textContent = "minha atividade DOM "
 
 // 6. Adicione o h1 ao body
-body.appendChild(novoh1)
+body.appendChild(novoH1)
+
 // ==================================================
 // ==> MODIFICAR ESTILOS <==
 // 7. Mude a cor de fundo do body para "lightblue"
@@ -32,7 +34,7 @@ for (let p of paragrafos) {
 // ==================================================
 // ==> MANIPULAR ATRIBUTOS <==
 // 9. Adicione uma classe "destaque" ao elemento com id "meuId"
-document.getElementById("meuid").classList.add("destaque")
+elementoPorId.classList.add("destaque")
 
 // 10. Adicione um atributo "title" com valor "Elemento destacado" ao mesmo elemento
-document.getElementById("meuid").setAttribute("title","Elementodestacado")
+elementoPorId.setAttribute("title","Elementodestacado")
